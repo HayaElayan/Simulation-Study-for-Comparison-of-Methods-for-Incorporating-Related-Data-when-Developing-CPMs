@@ -4,4 +4,4 @@ Comparison of Methods for Incorporating Related Data when Developing Clinical Pr
 R version 4.2.2
 
 
-To get raw results for each scenario, run Main_all_models.R file wile passing the row number for the desired scneario from SOURCE_PARAM.rds or SOURCE_PARAM_sampsize4_csf.rds for 200 iterations
+To get raw results for each scenario, run Main_all_models.R file wile passing the row numbers for the desired scenario from SOURCE_PARAM.rds or SOURCE_PARAM_sampsize4_csf.rds. Each scenario has 200 rows equivalent to 200 iterations.
