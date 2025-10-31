@@ -33,7 +33,21 @@ Comparison of Methods for Incorporating Related Data when Developing Clinical Pr
 
 * In these files, each scenario has 200 rows equivalent to 200 iterations.
 
-* To get raw results for each scenario, run Main_all_models.R file wile passing the row numbers for the desired scenario from SOURCE_PARAM.rds or SOURCE_PARAM_sampsize4_csf.rds. You can switch between SOURCE_PARAM.rds or SOURCE_PARAM_sampsize4_csf.rds by comment/uncomment the desired files from SOURCE_PARAMETERS.R (top two lines) 
+* To get raw results for each scenario, run Main_all_models.R file wile passing the row numbers for the desired scenario from SOURCE_PARAM.rds or SOURCE_PARAM_sampsize4_csf.rds. You can switch between SOURCE_PARAM.rds or SOURCE_PARAM_sampsize4_csf.rds by comment/uncomment the desired files from SOURCE_PARAMETERS.R (top two lines).
+  
+* Running Main_all_models.R will produce three results file for each iteration: 
+    * cal_plot_results: results to plot calibration curves. 
+    * validation_results: for validation metrics results (AUC, CITL, CSLOPE, BrierScore, MER).
+    * indv_preds_results: predicted values for specific patients to test individual instability.
+* Run csv_validation_metrics_group.R to group the validation metrics across 200 iterations per scenario and generate 3 validation results files grouped by the outcome-generating model model15, model5, model4
+  
+* Run Performance_metrics_plot.R to get the final plots of Performance metrics presented in the manuscript.
+* Run proportion_split_plot.R to get Proportion split of source and target three plots.
+* Run dev_sample_size_comparsion_plot.R to get Performance metrics with different sample size three plots.
+* Run num_of_preds_comparison.R to get Performance metrics with different number of predictor variables three plots.
+* Run tipping_point_analysis.R to get Tipping-point Analysis of Ancillary data benefit across Development Sample Sizes plot. 
+* Run calibration_MER_IndvPred_plots.R to get Instability of estimated risks for nine individuals, Individual Calibration, and Instability in Mean Estimated Risk plots
+* Run mean_calibration_curves.R to get Mean Calibration Instability Curves across 200 iterations for different scenarios. 
 
 # Example to run No shift scenario, with development sample size 4 times the minimum required sample size (4xN_min) and target dataset proportion split 0.25:
 
