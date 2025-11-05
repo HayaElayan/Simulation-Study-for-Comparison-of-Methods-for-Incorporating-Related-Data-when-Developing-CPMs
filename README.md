@@ -108,3 +108,22 @@ Other Supplementary material plots:
 * Run misspecification_factor_plot.R to get Correctly Specified vs. Misspecified Weighting Schemes results plot
 * Run num_of_preds_103scenario_comparison.R to get Performance metrics with different number of predictor variables for Combination of Single Case-mix, Event rate and Predictor-outcome association shifts
 * Run Delta_AUC.R to get Comparison of Discrimination Performance Across Recalibration Methods for Event rate shift table.
+
+
+# Case Study
+
+As we can't share the case study dataset. We generated a dummy dataset to run the case study study example.
+
+Please Run the following files in order to generate the final Figures presented in the manuscript:
+
+1- Transport to LUND with bootstrap.R -> to run the main analysis 
+
+2- generate optimsim adjuted results csv files.R -> to get the summary of optimsim adjuted and optimism unadjusted results
+
+3- generate bootstrap test and apparent results csv files.R -> to get summary of bootstrap apparent and test validation results
+
+4- optmism-adjusted-uadjusted plot.R -> to generate the final plot of optimism adjusted and adjusted results presented in the manuscript
+
+5- plots for bootstrap apparent results.R -> to generate the final plot of bootstrap apparent results presented in the manuscript
+
+6- plots for bootstrap test results.R -> to generate the final plot of bootstrap test results presented in the manuscript
