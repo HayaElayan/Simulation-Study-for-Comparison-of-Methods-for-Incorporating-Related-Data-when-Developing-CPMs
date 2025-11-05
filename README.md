@@ -112,13 +112,13 @@ Other Supplementary material plots:
 
 # Case Study
 
-As we can't share the case study dataset. We generated a dummy dataset to run the case study study example.
+As we can't share the case study dataset. We generated a dummy dataset to run the case study example.
 
 Please Run the following files in order to generate the final Figures presented in the manuscript:
 
 1- Transport to LUND with bootstrap.R -> to run the main analysis 
 
-2- generate optimsim adjuted results csv files.R -> to get the summary of optimsim adjuted and optimism unadjusted results
+2- generate optimsim adjuted results csv files.R -> to get the summary of optimism adjuted and optimism unadjusted results
 
 3- generate bootstrap test and apparent results csv files.R -> to get summary of bootstrap apparent and test validation results
 
